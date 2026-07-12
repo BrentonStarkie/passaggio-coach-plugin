@@ -1,0 +1,15 @@
+# Passaggio Coach — Python analysis dependencies.
+# Install into a virtualenv:  python -m pip install -r requirements.txt
+# Verified on Python 3.13 (Windows) with the versions noted; floors kept loose for macOS.
+librosa>=0.10       # f0 (pyin), spectral features            (verified 0.11.0)
+praat-parselmouth>=0.4.3  # Praat metrics: jitter/shimmer/HNR/CPPS/formants (verified 0.4.7)
+numpy>=1.24         #                                          (verified 2.2.5)
+scipy>=1.10         # signal helpers                           (verified 1.15.3)
+soundfile>=0.12     # WAV/AIFF/FLAC I/O (no ffmpeg needed)     (verified 0.13.1)
+matplotlib>=3.7     # pitch + spectrogram PNGs                 (verified 3.10.8)
+mcp>=1.0            # MCP takes-server (connector) only         (verified 1.8.0)
+
+# NOTE: ffmpeg is required only to convert compressed inputs (Voice Memos .m4a, .mp3).
+# WAV / AIFF / FLAC are read directly via soundfile and need no ffmpeg.
+#   macOS:   brew install ffmpeg
+#   Windows: winget install Gyan.FFmpeg   (or scoop install ffmpeg)

@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local take library / user recordings (never commit user audio or data)
+.passaggio/
+*.wav
+*.m4a
+*.mp3
+*.aiff
+
+# Editor
+.vscode/
+.idea/

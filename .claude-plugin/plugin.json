@@ -1,0 +1,22 @@
+{
+  "name": "passaggio-coach",
+  "version": "0.1.0",
+  "description": "Analyses short vocal takes of passaggio work: acoustic metrics, targeted coaching and exercises, take-to-take comparison, and progress tracking over time.",
+  "author": {
+    "name": "Brenton Starkie"
+  },
+  "keywords": [
+    "singing",
+    "voice",
+    "passaggio",
+    "vocal-coaching",
+    "audio-analysis"
+  ],
+  "mcpServers": {
+    "takes-server": {
+      "command": "python3",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/takes-server/server.py"]
+    }
+  },
+  "license": "MIT"
+}
