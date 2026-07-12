@@ -18,8 +18,8 @@ worry — paste the error to Claude or to Brenton and it's usually a quick fix.
 
 Download and run the official installer (it's a normal double-click `.pkg`):
 
-**https://www.python.org/downloads/macos/** → get the latest **Python 3.12 or 3.13**
-("macOS 64-bit universal2 installer"), open it, click through.
+**https://www.python.org/downloads/macos/** → get **Python 3.13** (the "macOS 64-bit universal2
+installer"). If 3.13 isn't offered, 3.12 is fine too. Open the `.pkg` and click through.
 
 Then check it worked — in Terminal:
 
@@ -27,7 +27,8 @@ Then check it worked — in Terminal:
 python3 --version
 ```
 
-You should see something like `Python 3.13.x`.
+You should see something like `Python 3.13.x`. (Your Mac is Apple Silicon, which everything here
+fully supports.)
 
 > Why the official installer and not Homebrew? This one puts `python3` somewhere both the
 > Terminal *and* the Claude app can see, and it lets you install the audio libraries without
@@ -43,8 +44,9 @@ This is the engine that listens to your voice. In Terminal:
 python3 -m pip install librosa praat-parselmouth soundfile matplotlib scipy numpy mcp
 ```
 
-It downloads a few things and takes a couple of minutes — that's normal. When it finishes,
-check it:
+It downloads a few things and takes a couple of minutes — that's normal. These come as
+ready-made packages for your Apple-Silicon Mac (nothing gets compiled), so you shouldn't see
+errors. When it finishes, check it:
 
 ```bash
 python3 -c "import librosa, parselmouth, mcp; print('all good')"
