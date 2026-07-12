@@ -79,8 +79,16 @@ claude --plugin-dir /path/to/passaggio-coach-plugin
 Then in Claude Code the commands are available (namespaced by plugin):
 `/passaggio-coach:coach`, `/passaggio-coach:progress`, `/passaggio-coach:takes`.
 
-To share it as a proper marketplace plugin later, add a `.claude-plugin/marketplace.json` and
-`/plugin marketplace add …` / `/plugin install …` (see the Claude Code plugin docs).
+Or install it as a marketplace plugin (the repo ships `.claude-plugin/marketplace.json`, so
+Claude Code can fetch it from GitHub):
+
+```
+/plugin marketplace add BrentonStarkie/passaggio-coach-plugin
+/plugin install passaggio-coach@passaggio-coach-plugin
+```
+
+(The GitHub repo is currently **private** — you must be signed in to GitHub as an account with
+access. Make it public to share more widely.)
 
 ### 3b. The takes-server connector (automatic library)
 Installing the plugin also starts a bundled local MCP server, **`takes-server`** (declared in

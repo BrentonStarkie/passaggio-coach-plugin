@@ -1,0 +1,14 @@
+{
+  "name": "passaggio-coach-plugin",
+  "owner": {
+    "name": "Brenton Starkie"
+  },
+  "description": "Marketplace for the Passaggio Coach plugin.",
+  "plugins": [
+    {
+      "name": "passaggio-coach",
+      "source": "./",
+      "description": "Analyses short vocal takes of passaggio work: acoustic metrics, targeted coaching and exercises, take-to-take comparison, and progress tracking over time."
+    }
+  ]
+}
