@@ -1,0 +1,18 @@
+# Force LF line endings for all text files — in the repository and on checkout.
+# Keeps the macOS checkout clean and silences CRLF warnings on Windows.
+* text=auto eol=lf
+
+# Be explicit for the text types in this repo.
+*.py    text eol=lf
+*.md    text eol=lf
+*.json  text eol=lf
+*.txt   text eol=lf
+*.sh    text eol=lf
+
+# Never convert binaries (audio/plots the plugin handles; normally gitignored anyway).
+*.png   binary
+*.wav   binary
+*.m4a   binary
+*.mp3   binary
+*.aiff  binary
+*.flac  binary
