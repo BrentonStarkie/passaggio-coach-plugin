@@ -87,8 +87,7 @@ Claude Code can fetch it from GitHub):
 /plugin install passaggio-coach@passaggio-coach-plugin
 ```
 
-(The GitHub repo is currently **private** — you must be signed in to GitHub as an account with
-access. Make it public to share more widely.)
+(The GitHub repo is public, so no sign-in is needed to install.)
 
 ### 3b. The takes-server connector (automatic library)
 Installing the plugin also starts a bundled local MCP server, **`takes-server`** (declared in
