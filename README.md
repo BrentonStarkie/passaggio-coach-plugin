@@ -38,6 +38,10 @@ coaching without touching code.
 
 Developed on Windows; intended to run mainly on **macOS**. Everything is cross-platform.
 
+> **Setting up on a Mac?** [**MAC-SETUP.md**](MAC-SETUP.md) is a friendly, non-technical,
+> copy-paste walkthrough (Python, ffmpeg, install, first take). The steps below are the concise
+> cross-platform version.
+
 ### 1. Python dependencies (once)
 Requires **Python 3.10+** (verified on 3.13). A virtualenv is recommended:
 
